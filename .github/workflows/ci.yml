@@ -15,6 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4.1.7
       - uses: aschbacd/gitlint-action@v1.2.0
+  hadolint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.7
+      - uses: hadolint/hadolint-action@v3.1.0
   markdownlint:
     runs-on: ubuntu-latest
     steps:
