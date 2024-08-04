@@ -5,6 +5,11 @@ on:
     branches:
       - main
 jobs:
+  actionlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.7
+      - uses: raven-actions/actionlint@v2.0.0
   gitlint:
     runs-on: ubuntu-latest
     steps:
